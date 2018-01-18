@@ -1,0 +1,55 @@
+/*======= Color Reference
+ purple #3c2841
+
+
+=======*/
+
+.navbar{
+  margin-bottom: 0;
+  border: none;
+  border-radius: 0;
+  border-top: 20px solid #3c2841;
+  padding: 15px 80px 15px 80px;
+  }
+
+.navbar-brand
+{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    text-align: center;
+    margin: auto;
+    padding-top: 15px;
+}
+
+.navbar-toggle {
+    z-index:1;
+}
+.nav li {
+  font-family: 'Source Serif Pro', serif;
+  font-size: 16px;
+}
+
+
+#hero {
+	background: url('../img/hero-bg.png') 50% 0 repeat fixed;
+	min-height: 500px;
+	position: relative;
+	display: table;
+	width: 100%;
+	padding: 40px 0;
+	color: white;
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizelegibility;
+}
+
+.half-width{
+  height: 500px;
+}
+
+
+#testimonial {
+  background: #f5f5f5;
+  height: 500px;
+}
