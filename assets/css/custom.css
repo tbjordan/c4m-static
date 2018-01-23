@@ -1,10 +1,16 @@
 /*======= Color Reference
  purple #3c2841
+ hover purple #563c5d
 
 
 =======*/
 
-/*GLOBAL STYLES*/
+/*=========GLOBAL STYLES=========*/
+@font-face {
+    font-family: CursiveScript;
+    src: url(../fonts/CursiveScript.ttf);
+}
+
 h3 {
   font-family: 'Source Serif Pro', serif;
   text-transform: uppercase;
@@ -13,12 +19,14 @@ h3 {
   color: #3c2841;
 }
 
-@font-face {
-    font-family: CursiveScript;
-    src: url(../assets/fonts/CursiveScript.ttf);
+
+p {
+  font-size: 16px;
+  line-height: 30px;
 }
 
-/*NAVIGATION STYLES*/
+
+/*=========NAVIGATION STYLES=========*/
 .navbar{
   margin-bottom: 0;
   border: none;
@@ -45,9 +53,15 @@ h3 {
   font-family: 'Source Serif Pro', serif;
   font-size: 16px;
 }
+
+nav li a{
+  text-align: center;
+}
+
+
 /*END NAV STYLES*/
 
-/*HERO SECTION*/
+/*=========Homepage HERO SECTION=========*/
 #hero {
 	background: url('../img/hero-bg.png') 50% 0 repeat fixed;
 	min-height: 500px;
@@ -60,42 +74,259 @@ h3 {
 	text-rendering: optimizelegibility;
 }
 
+#hero article{
+  margin: auto;
+  padding: 15% 15% 5% 15%;
+  text-align: center;
+  overflow: visible;
+}
+
+#hero article h1, h2{
+  font-weight: bold;
+  font-family: 'Source Serif Pro', sans-serif;
+}
+
+#hero article h2{
+  color: #3c2841;
+}
+/*END HERO STYLES*/
+
+
+/*=========ABOUT HERO SECTION=========*/
+
+#about-hero {
+	background: url('../img/hero-about.png') 50% 0 repeat fixed;
+	position: relative;
+	display: table;
+	width: 100%;
+	color: white;
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizelegibility;
+}
+
+#about-hero article{
+  background: rgba(245, 245, 245, 0.5);
+  margin-top: 10%;
+  margin-bottom: 2%;
+  padding: 25px;
+  text-align: center;
+  width: 50%;
+}
+
+#about-hero article h1{
+  font-weight: bold;
+  font-family: 'Source Serif Pro', sans-serif;
+  color: #3c2841;
+}
+
+#about-hero p{
+  color: #3c2841;
+}
+
+
+/*=========MISSION & TESTIMONIAL STYLES=========*/
+
 .half-width{
-  height: 500px;
+  min-height: 500px;
+  overflow: hidden;
+
 }
-
-
-#testimonial {
+.half-width #testimonial {
   background: #f5f5f5;
-  height: 500px;
+  margin: auto;
+  padding: 8%;
+  min-height: 500px;
+  text-align: center;
 }
 
 
+#testimonial h3{
+  font-family: 'Source Serif Pro', serif;
+  font-size: 22px;
+  font-weight: normal;
+  text-transform: none;
+  letter-spacing: normal;
+  line-height: 48px;
+  color: #563c5d;
+}
 
-/*REGISTER BANNER*/
+#testimonial p{
+  font-size: 14px;
+  font-style: italic;
+}
+
+.half-width #mission {
+  margin: auto;
+  padding: 8%;
+  max-height: 500px;
+}
+
+#mission a {
+  font-family: CursiveScript, cursive;
+  color: #3c2841;
+  font-size: 40px;
+  text-decoration: none;
+}
+
+#mission a:hover{
+  color: #563c5d;
+}
+/*END MISSION & TESTIMONIAL STYLES*/
+
+
+/*=========ABOUT US SECTION=========*/
+
+#about-us{
+  height: auto;
+  overflow: hidden;
+  background: white;
+
+}
+
+#about-us, #beliefs .about-content{
+  padding: 5%;
+  margin-bottom: 2%;
+}
+
+#about-callout{
+  background: #3c2841;
+  height: auto;
+  margin-top: 8%;
+}
+
+#about-callout p{
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 20px;
+  font-weight: 300;
+
+}
+
+img#founders{
+  width: 100%;
+  border-radius: 1%;
+  padding-top: 25px;
+}
+
+/*=========BELIEFS SECTION=========*/
+
+#beliefs{
+  min-height: 500px;
+  overflow: hidden;
+  background: #f5f5f5;
+}
+
+#beliefs ul{
+  padding: 0 5% 0 5%;
+  width: 90%;
+}
+
+#beliefs ul li{
+  padding-bottom: 25px;
+  font-size: 16px;
+}
+
+/*=========REGISTER BANNER=========*/
 .register{
   background: url('../img/register-bg.png');
-  height: 300px;
+  max-height: 300px;
   text-align: center;
-  vertical-align: middle;
+  margin: auto;
+  padding: 60px 30px 60px 30px;
 }
 
-.btn {
+.register .btn {
   font-family: CursiveScript;
   text-transform: lowercase;
   font-size: 36px;
   background: #3c2841;
   border: none;
+  width: 200px;
+  font-weight: normal;
 }
 
-.btn:hover{
+.register .btn:hover{
   background: #563c5d;
 }
 
+
 /*END REGISTER BANNER*/
 
-/*FOOTER STYLES*/
+
+/*=========FOOTER STYLES=========*/
 footer{
   background: #3c2841;
-  height: 200px;
+  min-height: 200px;
+  color: #f5f5f5;
+  margin: auto;
+  padding: 50px 0 50px 0;
+  text-align: left;
 }
+footer p{
+  font-size: 12px;
+}
+
+footer .form-group{
+  width: 200px;
+  display: inline-block;
+  font-size: 16px;
+}
+footer .btn {
+  background: #563c5d;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 16px;
+  height: auto;
+
+}
+
+footer form label{
+  display: none;
+}
+
+footer form {
+
+}
+
+footer #footer-signup{
+  text-align: right;
+}
+
+
+
+
+/*=========MEDIA QUERIES==========*/
+
+@media only screen and (max-width: 500px) {
+
+  .navbar-brand{
+    text-align: left;
+
+  }
+
+  .navbar-toggle{
+    margin-right: -25px;
+  }
+
+
+
+  #hero article{
+    padding-top: 35%;
+  }
+
+  #about-hero article{
+    background: rgba(245, 245, 245, 0.5);
+    margin-top: 30%;
+    margin-bottom: 5%;
+    padding: 25px 25px 15px 25px;
+    text-align: center;
+    width: 90%;
+  }
+
+  footer #footer-signup, #footer-contact{
+    text-align: center;
+  }
+
+  footer #footer-contact{
+    margin-bottom: 25px;
+  }
