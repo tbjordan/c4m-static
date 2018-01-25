@@ -58,10 +58,24 @@ nav li a{
   text-align: center;
 }
 
+nav li a.active{
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+.active-link{
+  width: 50px;
+  height: 5px;
+  background: #3c2841;
+  margin-left: 14px;
+  display: none;
+}
 
 /*END NAV STYLES*/
 
-/*=========Homepage HERO SECTION=========*/
+/*=========HOMEPAGE=========*/
+/*homepage hero styles*/
+
 #hero {
 	background: url('../img/hero-bg.png') 50% 0 repeat fixed;
 	min-height: 500px;
@@ -89,48 +103,17 @@ nav li a{
 #hero article h2{
   color: #3c2841;
 }
-/*END HERO STYLES*/
+/*end hero styles*/
 
 
-/*=========ABOUT HERO SECTION=========*/
-
-#about-hero {
-	background: url('../img/hero-about.png') 50% 0 repeat fixed;
-	position: relative;
-	display: table;
-	width: 100%;
-	color: white;
-	-webkit-font-smoothing: antialiased;
-	text-rendering: optimizelegibility;
-}
-
-#about-hero article{
-  background: rgba(245, 245, 245, 0.5);
-  margin-top: 10%;
-  margin-bottom: 2%;
-  padding: 25px;
-  text-align: center;
-  width: 50%;
-}
-
-#about-hero article h1{
-  font-weight: bold;
-  font-family: 'Source Serif Pro', sans-serif;
-  color: #3c2841;
-}
-
-#about-hero p{
-  color: #3c2841;
-}
-
-
-/*=========MISSION & TESTIMONIAL STYLES=========*/
+/*mission adn testimonial styles*/
 
 .half-width{
   min-height: 500px;
   overflow: hidden;
 
 }
+
 .half-width #testimonial {
   background: #f5f5f5;
   margin: auto;
@@ -138,7 +121,6 @@ nav li a{
   min-height: 500px;
   text-align: center;
 }
-
 
 #testimonial h3{
   font-family: 'Source Serif Pro', serif;
@@ -174,7 +156,39 @@ nav li a{
 /*END MISSION & TESTIMONIAL STYLES*/
 
 
-/*=========ABOUT US SECTION=========*/
+
+/*=========ABOUT US PAGE=========*/
+
+/*ABOUT HERO SECTION*/
+
+#about-hero {
+	background: url('../img/hero-about.png') 50% 0 repeat fixed;
+	position: relative;
+	display: table;
+	width: 100%;
+	color: white;
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizelegibility;
+}
+
+#about-hero article{
+  background: rgba(245, 245, 245, 0.5);
+  margin-top: 10%;
+  margin-bottom: 2%;
+  padding: 25px;
+  text-align: center;
+  width: 50%;
+}
+
+#about-hero article h1{
+  font-weight: bold;
+  font-family: 'Source Serif Pro', sans-serif;
+  color: #3c2841;
+}
+
+#about-hero p{
+  color: #3c2841;
+}
 
 #about-us{
   height: auto;
@@ -209,7 +223,7 @@ img#founders{
   padding-top: 25px;
 }
 
-/*=========BELIEFS SECTION=========*/
+/*beliefs section*/
 
 #beliefs{
   min-height: 500px;
@@ -226,6 +240,180 @@ img#founders{
   padding-bottom: 25px;
   font-size: 16px;
 }
+
+/*=========END ABOUT PAGE=========*/
+
+
+/*=========EVENTS PAGE=========*/
+#events-hero {
+	width: 100%;
+	color: white;
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizelegibility;
+  color: black;
+}
+#events-hero article{
+  margin-top: 10%;
+  margin-bottom: 2%;
+  padding: 25px;
+  text-align: center;
+  width: 60%;
+}
+
+#events .container{
+  background: #f5f5f5;
+  margin-bottom: 50px;
+}
+
+#events ul{
+  list-style: none;
+  padding: 5% 8% 5% 8%;
+}
+
+#events-hero article h1{
+  font-weight: bold;
+  font-family: 'Source Serif Pro', sans-serif;
+  color: #3c2841;
+}
+/*=========END EVENTS PAGE=========*/
+
+/*=========CONTACT PAGE=========*/
+
+#contact-hero {
+	width: 100%;
+	color: white;
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizelegibility;
+  color: black;
+}
+#contact-hero article{
+  margin-top: 10%;
+  margin-bottom: 2%;
+  padding: 25px;
+  text-align: center;
+  width: 60%;
+}
+
+#contact-hero article h1{
+  font-weight: bold;
+  font-family: 'Source Serif Pro', sans-serif;
+  color: #3c2841;
+}
+
+#contact-form .container{
+  margin-bottom: 50px;
+  padding-left: 15%;
+  padding-right: 15%;
+}
+
+#contact-form .form-control{
+  border-radius: 0;
+}
+
+#contact-form .btn {
+  background: #3c2841;
+  border: none;
+  font-family: CursiveScript;
+  font-size: 30px;
+  width: 100%;
+}
+
+#contact-form .btn:hover{
+  background: #563c5d;
+}
+
+
+textarea[type="textarea"]:focus, input[type="text"]:focus, input[type="email"]:focus{
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(86, 60, 93, 0.6);
+  outline: 0 none;
+  border-color: #3c2841;
+}
+/*=========END CONTACT PAGE=========*/
+
+
+/*=========RESOURCES & SINGLE POST=========*/
+#sidebar{
+  margin-bottom: 50px;
+  position: sticky;
+}
+#resources, #single-post{
+  margin-top: 10%;
+}
+
+#resources #posts{
+  margin-bottom: 50px;
+  padding-right: 70px;
+}
+
+#resources .card-title{
+  font-family: 'Source Serif Pro', serif;
+  color: #3c2841;
+  font-size: 24px;
+}
+
+#resources a.read-more{
+  font-family: CursiveScript;
+  text-transform: lowercase;
+  font-size: 36px;
+  color: #3c2841;
+  border: none;
+  width: 200px;
+  font-weight: normal;
+  text-decoration: none;
+}
+
+#resources a{
+  color: #3c2841;
+}
+
+#resources a.read-more:hover{
+  color: #563c5d;
+}
+
+#resources h5{
+  font-family: 'Source Serif Pro', serif;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+#resources .card-img-top{
+  width: 100%;
+}
+
+#single-post a{
+  color: #3c2841;
+}
+
+#single-post h5{
+  font-family: 'Source Serif Pro', serif;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+#single-post .card-img-top{
+  width: 100%;
+}
+
+#single-post #single-post-content{
+  padding-right: 70px;
+  margin-bottom: 50px;
+}
+
+#single-post .btn {
+  background: #3c2841;
+  border: none;
+}
+
+#single-post .btn:hover{
+  background: #563c5d;
+}
+
+#single-post h1.post-title{
+  font-family: 'Source Serif Pro', serif;
+}
+/*=========END RESOURCES & SINGLE POST=========*/
+
+
 
 /*=========REGISTER BANNER=========*/
 .register{
@@ -250,8 +438,7 @@ img#founders{
   background: #563c5d;
 }
 
-
-/*END REGISTER BANNER*/
+/*=========END REGISTER BANNER=========*/
 
 
 /*=========FOOTER STYLES=========*/
@@ -272,44 +459,38 @@ footer .form-group{
   display: inline-block;
   font-size: 16px;
 }
+
 footer .btn {
   background: #563c5d;
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 16px;
   height: auto;
-
 }
 
 footer form label{
   display: none;
 }
 
-footer form {
-
-}
-
 footer #footer-signup{
   text-align: right;
 }
 
-
+/*=========END FOOTER STYLES=========*/
 
 
 /*=========MEDIA QUERIES==========*/
 
 @media only screen and (max-width: 500px) {
-
+/*NAVBAR*/
   .navbar-brand{
     text-align: left;
-
   }
 
   .navbar-toggle{
     margin-right: -25px;
   }
 
-
-
+/*HEROES*/
   #hero article{
     padding-top: 35%;
   }
@@ -323,6 +504,46 @@ footer #footer-signup{
     width: 90%;
   }
 
+  #events-hero article{
+    margin-top: 30%;
+    margin-bottom: 5%;
+    padding: 25px 25px 15px 25px;
+    text-align: center;
+    width: 90%;
+  }
+
+  #contact-hero article{
+    margin-top: 30%;
+    margin-bottom: 5%;
+    padding: 25px 25px 15px 25px;
+    text-align: center;
+    width: 90%;
+  }
+
+/*EVENTS*/
+  #events .container{
+    background: #f5f5f5;
+    margin-bottom: 0px;
+  }
+
+/*RESOURCES & SINGLE POST*/
+  #resources, #single-post{
+    margin-top: 12%;
+  }
+
+  #resources #posts .card{
+    padding: 0;
+  }
+
+  #single-post  #single-post-content{
+    padding: 0 15px 0 15px;
+  }
+/*CONTACT*/
+
+#contact-form .container{
+  padding: 0;
+}
+/*FOOTER*/
   footer #footer-signup, #footer-contact{
     text-align: center;
   }
